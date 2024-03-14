@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+}
+
+*{
+    margin: 0; padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+header{
+    width: fit-content; height: fit-content;
+}
+body{
+    background-color: #F3F5FC;
+    display: flex;
+}
+main{
+    width: 100vw; height: 100vh;
+}
+
+.header__logo{
+    margin: 40px 0px 0px 40px;
+}
+
+.seletor__tt__brain{
+    display: flex;
+    background: white;
+    width: 72px;
+    height: 128px;
+    margin: 64px 0px 0px 64px;
+    border-radius: 800px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.seletor__tt__brain > a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #0A3871;
+    font-weight: 150;
+    font-family: 'Inter', sans-serif;
+}
+.seletor__pt__es{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 72px;
+    height: 128px;
+    margin: 88px 0px 0px 64px;
+    border-radius: 800px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.seletor__tt__brain, .seletor__pt__es{
+    display: none; 
+}
+
+
+.seletor__pt__es > a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #0A3871;
+    font-weight: 150;
+    font-family: 'Inter', sans-serif;
+
+}
+.seletor__pt__es > a:nth-last-child(1){
+    color: #0A3871;
+}
+
+.seletor__pt__es::after,
+.seletor__tt__brain::after {
+    content: '';
+    position: absolute; 
+    width: 120px;
+    height: 176px;
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 800px;
+    z-index: -1;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.04);
+}
+.text__input{
+    margin: 120px 0px 0px 80px;
+    width: fit-content;
+}
+
+.text__input__text{
+    
+    width: 680px;
+    height: 360px;
+
+    /* margin: -335px 0 0 200px; */
+    border: none;
+    background: transparent;
+    font-size: 2.9rem;
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-style: normal; font-weight: 400; 
+    line-height: 150%;  
+    cursor: text;
+    text-wrap: wrap;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+
+.text__input__text::placeholder{
+    font-size: 2.9rem;
+    color: #0A3871;
+    font-style: normal; font-weight: 400; 
+    line-height: 150%;
+    text-align: start;
+}
+
+.aviso{
+    margin: auto 0px 72px 80px;
+    position: absolute;
+}
+.aviso__texto p{
+    font-size: 1.4rem;
+    line-height: 150%;
+    font-style: normal; font-weight: 400; 
+    width: auto;
+}
+
+.aviso__button__cripto{
+    padding: 24px;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    width: 328px;
+    height: 64px;
+    text-align: center;
+    font-size: 1.6rem;    
+    line-height: auto;
+    border: none;
+
+}
+
+.aviso__button__descripto{
+    margin-left: 24px;
+    padding: 24px;
+    border-radius: 24px;
+    background: #D8DFE8;
+    color: #0A3871;
+    width: 328px;
+    height: 64px;
+    gap: 8px;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: auto;
+    border: 1px solid #0A3871;
+}
+
+.output__text{
+    position: absolute;
+    top: 20px; left: 73%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.output__text__text{
+    border-radius: 32px;
+    resize: none;
+    border: none;
+    background: #FFFF;
+    padding: 18px;
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-wrap: wrap;
+    text-align: center;                 
+    max-width: 300px;
+}
+.output__text__text::placeholder{
+    padding-top: 300px;
+    font-size: 1.6rem;    
+}
+.aviso__button__copy{
+    position: absolute;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.658);
+    color: #0A3871;
+    width: 280px;
+    height: 64px;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: auto;
+    border:1px solid #0A3871;
+    bottom: 1;
+    left: 0;
+    margin: 465px 0px 0px 28px;
+}
+          
+      .output__text__text::-webkit-scrollbar {
+        width: 6px; 
+      }
+      
+      .output__text__text::-webkit-scrollbar-track {
+        background: transparent; 
+        
+      }
+      
+      .output__text__text::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+
+        background: #888; 
+      }
+      
+      .output__text__text::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+
+      .mensagem-sucesso {
+        position: fixed;
+        top: 60%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 9999;
+        animation: fadeOut 3s forwards; 
+    }
+    
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    

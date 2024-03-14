@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/mediaQuerry.css">
+    <link rel="shortcut icon" href="assets/faviconAlura.png" type="image/x-icon">
+
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="sidebar__left">
+        <img class="header__logo" src="assets/LogoAlura.png" alt="Logo da Alura">
+        <div class="seletor__tt__brain">
+            <a href="">TT</a>
+            <a href=""><img src="assets/brain.png" alt="Silhueta de cabeça"></a>
+        </div>
+
+        <div class="seletor__pt__es">
+            <a href="">PT</a>
+            <a href="">ES</a>
+        </div>
+    </header>
+    <main>
+        <div class="text__input">
+            <textarea class="text__input__text" name="inputTexto" id="" cols="1" rows="10" placeholder="Digite seu texto aqui!"></textarea>
+        </div>
+        <div class="aviso">
+            <span class="aviso__texto">
+                <p><img src="icon/exclamacao.png" alt="">Apenas letras minúsculas e sem acento.</p>
+            </span>
+        
+            <button class="aviso__button__cripto">Criptografar</button>
+            <button class="aviso__button__descripto">Descriptografar</button> 
+        </div>
+
+        <div class="output__text">
+            <div class="output__text">
+                <textarea disabled class="output__text__text" name="" id="" cols="75" rows="25" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+                <button class="aviso__button__copy">Copiar</button>
+            </div>
+            
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
