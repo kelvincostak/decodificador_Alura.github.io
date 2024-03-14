@@ -83,6 +83,91 @@
     }
     
 }
+@media (min-width: 782px) and (max-width: 922px) {
+    *{
+        margin: 0; padding: 0;
+        
+    }
+    header{
+        width: 98vw; height: 96px;
+    }
+
+    body{
+        flex-direction: column;
+    }
+   
+    .sidebar__left{
+        margin: 0;
+        max-width: 100vw;
+        height: 96px;
+    }
+    .header__logo{
+        margin: 24px 0px 24px 16px;
+    }
+    
+    .seletor__tt__brain, .seletor__pt__es{
+        display: none;
+    } 
+
+    .text__input{
+        width: 343px;
+        margin: 56px 0px 0 0px ;
+        padding: 0px 16px;
+    }
+    .text__input__text{
+        width: 343px;
+    }
+
+    .aviso{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+   
+   
+    .aviso__button__descripto{
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    .output__text{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        align-items: center;
+        top: 370px; left: 0px;
+        align-items: center;
+        justify-content: center;   
+    }
+  
+    .aviso__button__copy{
+        left: -10px;
+        bottom: 0;
+    }
+        .output__text__text{
+        width: 90vw;
+        height: 186px;
+        box-sizing: content-box;
+    }
+
+  
+    .output__text__text::placeholder{
+        padding: 30px 10px 10px 0px;
+        text-align: center;
+
+    }
+
+    .aviso__button__copy{
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        margin-bottom: 32px;
+    }
+    
+}
 /* -------------------------------------------------------------------- */
 
 @media (min-width: 350px) and (max-width: 375px) {
